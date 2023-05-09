@@ -1,11 +1,12 @@
 from car import Car
 
-from batteries.nubbin_battery import NubbinBattery
-from batteries.spindler_battery import SpindlerBattery
+from battery.nubbin_battery import NubbinBattery
+from battery.spindler_battery import SpindlerBattery
 
 from engines.capulet_engine import CapuletEngine
 from engines.sternman_engine import SternmanEngine
 from engines.willoughby_engine import WilloughbyEngine
+
 
 class CarFactory:
 	@staticmethod
@@ -41,7 +42,7 @@ class CarFactory:
 
 
 	@staticmethod
-	def create_calliope(current_date, last_service_date, current_mileage, last_service_mileage)
+	def create_thovex(current_date, last_service_date, current_mileage, last_service_mileage)
 		engine = CapuletEngine(current_mileage, last_service_mileage)
 		battery = NubbinBattery(current_date, last_service_date)
 		car = Car(engine, battery)
