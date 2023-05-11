@@ -17,4 +17,3 @@ class SpindlerBattery(Battery):
 		else:
 			return False
 
-		
